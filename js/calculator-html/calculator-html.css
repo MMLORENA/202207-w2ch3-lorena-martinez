@@ -1,0 +1,77 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid #f1f1f1;
+  margin-top: 5%;
+  margin-left: 20%;
+  background: rgb(31, 31, 31);
+  width: 60%;
+  height: 80%;
+}
+
+p {
+  margin: 0%;
+  font-size: 3vh;
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  color: #ffffff;
+  text-align: center;
+  height: 10vh;
+  font-size: 3vh;
+}
+
+td {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 25%;
+  height: 10%;
+}
+
+.botoncalculadora {
+  background: #131313;
+}
+
+.numero {
+  background: #060606;
+}
+
+#calcularMasMenos,
+#pulsarComa {
+  background: #060606;
+}
+
+#Estandar {
+  font-weight: bold;
+  margin-top: 0.5%;
+  margin-left: 0.5%;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+#operaciones {
+  text-align: right;
+  font-size: 2vw;
+  color: rgb(189, 185, 185);
+}
+
+#visor {
+  text-align: right;
+  font-size: 4vw;
+  color: #ffffff;
+}
+
+td:hover {
+  background: #343434;
+}
+
+#pulsarIgual {
+  background: #234f64;
+}
+
+#pulsarIgual:hover {
+  background: #278aba;
+}
