@@ -1,6 +1,6 @@
 function calculatorPro() {
   let newNum;
-  let numList = [];
+  const numList = [];
 
   let resultSum;
   let resultRest;
@@ -18,7 +18,7 @@ function calculatorPro() {
     numList[i] = parseFloat(numList[i]);
   }
 
-  if (numList.length == 2) {
+  if (numList.length === 2) {
     resultSum = numList[0] + numList[1];
     resultRest = numList[0] - numList[1];
     resultMult = numList[0] * numList[1];
@@ -32,10 +32,10 @@ function calculatorPro() {
     resultMult = numList[0];
     resultDiv = numList[0];
     for (let i = 1; i < numList.length; i++) {
-      resultSum = resultSum + numList[i];
-      resultRest = resultRest - numList[i];
-      resultMult = resultMult * numList[i];
-      resultDiv = resultDiv / numList[i];
+      resultSum += numList[i];
+      resultRest -= numList[i];
+      resultMult *= numList[i];
+      resultDiv /= numList[i];
     }
     results = [resultSum, resultRest, resultMult, resultDiv];
   }
@@ -53,17 +53,15 @@ function calculatorPro() {
 
   if (!Number(numList[0])) {
     console.log("The first input is not a number, please try again.");
+  } else if (!Number(numList[1])) {
+    console.log(
+      `The result of the square root of ${numList[0]} is: ${results[0]}`
+    );
   } else {
-    if (!Number(numList[1])) {
-      console.log(
-        "The result of the square root of " + numList[0] + " is: " + results[0]
-      );
-    } else {
-      console.log("The result of the sum is: " + results[0]);
-      console.log("The result of the rest is: " + results[1]);
-      console.log("The result of the multiplication is: " + results[2]);
-      console.log("The result of the division is: " + results[3]);
-    }
+    console.log(`The result of the sum is: ${results[0]}`);
+    console.log(`The result of the rest is: ${results[1]}`);
+    console.log(`The result of the multiplication is: ${results[2]}`);
+    console.log(`The result of the division is: ${results[3]}`);
   }
 
   if (confirm("Want new numbers? ")) {
